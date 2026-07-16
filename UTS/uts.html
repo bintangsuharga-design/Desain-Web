@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Live Coding</title>
+</head>
+<body>
+<h2>Table Data Mahasiswa</h2>
+
+<table border="1" cellpadding="8">
+    <thead>
+        <tr>
+            <th>No</th>
+            <th>Nama</th>
+            <th>NIM</th>
+            <th>Program Studi</th>
+            <th>Gender</th>
+            <th>Asal Kota</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Bintang</td>
+            <td>112501</td>
+            <td>Teknik Informatika</td>
+            <td>Laki-laki</td>
+            <td>Malang</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Lia</td>
+            <td>112502</td>
+            <td>Manajemen Informatika</td>
+            <td>Perempuan</td>
+            <td>Banyuwangi</td>
+        </tr>
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <td colspan="6"><b>Total Mahasiswa: 2</b></td>
+        </tr>
+    </tfoot>
+</table>
+<br>
+<hr>
+<br>
+<h2>Form Data Mahasiswa</h2>
+<form>
+<table cellspacing="8">
+    <tr>
+        <td><label for="nama">Nama</label></td>
+        <td>:</td>
+        <td><input type="text" id="nama" name="nama"></td>
+    </tr>
+
+    <tr>
+        <td><label for="nim">NIM</label></td>
+        <td>:</td>
+        <td><input type="text" id="nim" name="nim"></td>
+    </tr>
+
+    <tr>
+        <td><label for="prog">Program Studi</label></td>
+        <td>:</td>
+        <td>
+            <select id="prog" name="prog">
+                <option>--Pilih Program Studi--</option>
+                <option>Teknik Informatika</option>
+                <option>Manajemen Informatika</option>
+            </select>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Gender</td>
+        <td>:</td>
+        <td>
+            <input type="radio" id="lk" name="gd" value="Laki-laki">
+            <label for="lk">Laki-laki</label>
+
+            <input type="radio" id="pr" name="gd" value="Perempuan">
+            <label for="pr">Perempuan</label>
+        </td>
+    </tr>
+
+    <tr>
+        <td><label for="kota">Asal Kota</label></td>
+        <td>:</td>
+        <td>
+            <select id="kota" name="kota">
+                <option>-- Pilih Kota --</option>
+                <option>Surabaya</option>
+                <option>Banyuwangi</option>
+                <option>Malang</option>
+                <option>Jakarta</option>
+            </select>
+        </td>
+    </tr>
+	<tr align="left">
+				<th><label >Hobi</label></th>
+				<th>:</th>
+				<td>
+				<input type="checkbox" id="baca" name="hobi" value="baca">
+				<label for="baca">Membaca</label>
+				
+				<input type="checkbox" id="musik" name="hobi" value="musik">
+				<label for="musik">Musik</label>
+				
+				<input type="checkbox" id="coding" name="hobi" value="coding">
+				<label for="coding">Coding</label>
+				
+				<input type="checkbox" id="olahraga" name="hobi" value="olahraga">
+				<label for="olahraga">Olahraga</label>
+				</td>
+			</tr>
+</table>
+		<button type="submit">Simpan</button>
+        <button type="reset">Reset</button>
+</form>
+</body>
+</html>
