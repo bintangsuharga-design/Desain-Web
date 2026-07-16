@@ -1,28 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <title>tugas 3</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Web Semantik</title>
 </head>
 <body>
 
-<h1>Contoh Artikel</h1>
+    <header>
+        <h1>Jurnal Teknologi</h1>
+        <p>Berbagi informasi seputar dunia web development</p>
+        
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#artikel">Artikel</a></li>
+                <li><a href="#tentang">Tentang Kami</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<article>
-  <h2>Google Chrome</h2>
-  <p>Google Chrome adalah peramban web yang dikembangkan oleh Google, dirilis pada tahun 2008. Chrome adalah peramban web terpopuler di dunia saat ini!</p>
-</article>
+    <main>
 
-<article>
-  <h2>Mozilla Firefox</h2>
-  <p>Mozilla Firefox adalah peramban web sumber terbuka yang dikembangkan oleh Mozilla. Firefox telah menjadi peramban web terpopuler kedua sejak Januari 2018.</p>
-</article>
+        <section id="artikel">
+            <h2>Artikel Terbaru</h2>
 
-<article>
-  <h2>Microsoft Edge</h2>
-  <p>Microsoft Edge adalah peramban web yang dikembangkan oleh Microsoft, dirilis pada tahun 2015. Microsoft Edge menggantikan Internet Explorer.</p>
-</article>
-<footer>
-  <p>Tiktok : Hazen</p>
-</footer>
+            <article>
+                <h3>Belajar HTML Semantik untuk Pemula</h3>
+                <p>Dipublikasikan pada <time datetime="2026-07-16">16 Juli 2026</time></p>
+                
+                <p>HTML semantik adalah penulisan kode HTML dengan menggunakan tag yang sesuai dengan fungsinya. Ini sangat bagus untuk SEO dan aksesibilitas...</p>
+                
+                <figure>
+                    <img src="ilustrasi-html.jpg" alt="Struktur HTML Semantik" width="400">
+                    <figcaption>Gambar 1: Perbandingan struktur div vs semantik.</figcaption>
+                </figure>
+                
+                <a href="#selengkapnya">Baca Selengkapnya</a>
+            </article>
+
+            <article>
+                <h3>Tips SEO Website di Tahun 2026</h3>
+                <p>Dipublikasikan pada <time datetime="2026-07-10">10 Juli 2026</time></p>
+                <p>Selain kecepatan web, struktur kode yang rapi menggunakan tag semantik menjadi kunci utama agar web mudah dirayapi oleh Google bot...</p>
+                <a href="#selengkapnya">Baca Selengkapnya</a>
+            </article>
+        </section>
+
+        <aside>
+            <h3>Mengenai Penulis</h3>
+            <p>Halo! Saya seorang web developer yang senang membagikan tips coding harian.</p>
+            
+            <h3>Link Populer</h3>
+            <ul>
+                <li><a href="#">Tutorial CSS Grid</a></li>
+                <li><a href="#">Panduan JavaScript modern</a></li>
+            </ul>
+        </aside>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Jurnal Teknologi. All rights reserved.</p>
+        <p><a href="#kebijakan">Kebijakan Privasi</a> | <a href="#kontak">Kontak</a></p>
+    </footer>
+
 </body>
 </html>
